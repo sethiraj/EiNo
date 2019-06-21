@@ -1,0 +1,85 @@
+{
+  "id": "a78bedaf-cfab-4ec8-a686-d1d8e02ae9f0",
+  "version": "2.0",
+  "name": "ShoppingCartProject",
+  "url": "http://localhost:8070",
+  "tests": [{
+    "id": "e0dc0a8d-ac1a-4a35-8bf8-f226b882418e",
+    "name": "TestCase1",
+    "commands": [{
+      "id": "91a84b3e-38bc-4c78-ad69-3c07ebb1dded",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ed8b164-eaca-4ef6-b7d5-00caf6817888",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1335x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65651e95-e721-46ba-a624-d60df362a14a",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd1b1b4c-170c-4796-8522-bb9443063057",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "4572e37b-94da-43e0-88c1-40186a006c58",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "40a094d1-e1cd-4ad7-8235-4546b04b008d",
+      "comment": "login",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b9b46589-b1f0-483d-8c68-2199028f4a98",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e0dc0a8d-ac1a-4a35-8bf8-f226b882418e"]
+  }],
+  "urls": ["http://localhost:8070/"],
+  "plugins": []
+}
